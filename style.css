@@ -1,0 +1,46 @@
+/* CSS designed by Caitlin Macleod (u5351248) for an ANU DESN1001 assignment, 2017.
+sources referenced:
+	
+*/
+
+body {
+	font-family: 'Fire Sans', sans-serif;
+	background-color: #d6fff4;
+}
+
+/* layout styling */
+.container {
+	max-width: 720px;
+	margin: 0 auto 0 auto;
+}
+
+/* hover navigation bar */
+.hover-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100vw;
+	padding: 0 4px 0 4px;
+	min-height: 20px;
+	background-color: #FFFFFF;
+}
+
+.hover-nav a {
+	color: #008877;
+}
+
+.hover-nav a:hover {
+	background-color: #FFEE66;
+}
+
+/* text formatting */
+body {
+	color: #3e3e3e;
+}
+
+a {
+	color: #21426f;
+}
+a:hover {
+	color: #2f5d9e
+}
