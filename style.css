@@ -4,8 +4,8 @@ sources referenced:
 */
 
 body {
-	font-family: 'Fire Sans', sans-serif;
-	background-color: #d6fff4;
+	font-family: 'Fira Sans', sans-serif;
+	background-color: #d0e3ef;
 }
 
 /* layout styling */
@@ -14,8 +14,8 @@ body {
 	margin: 0 auto 0 auto;
 }
 
-blockquote {
-	background-color: rgba(255, 255, 255, 150);
+blockquote.text-quote {
+	background-color: rgba(255, 255, 255, 0.7);
 	padding: 20px;
 }
 
@@ -25,20 +25,53 @@ blockquote {
 	top: 0;
 	left: 0;
 	min-width: 100vw;
-	padding: 0 4px 0 4px;
-	min-height: 20px;
-	background-color: #FFFFFF;
-}
-
-.hover-nav a {
-	color: #008877;
+	padding: 0 0 0 0;
+	min-height: 48px;
+	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 5;
 }
 
 .hover-nav a:hover {
-	background-color: #FFEE66;
+	background-color: #d0e3ef;
+	color: #21426f;
 }
 
-/* text formatting */
+.hover-nav #hover-title {
+	font-weight: bold;
+	color: #3e3e3e;
+	text-decoration: none;
+	margin: 0;
+}
+
+.hover-text {
+	max-width: 720px;
+	margin: 0 auto 5px auto;
+}
+
+#introduction { /* to offset the floating menu */
+	margin-top: 64px;
+}
+
+/* if screen is narrow (primarily fixing hover nav) */
+@media only screen and (max-width: 500px){
+	.hover-nav {
+		position: inherit;
+		margin-top: -8px;
+		margin-left: -8px;
+	}
+
+	#introduction {
+		margin-top: inherit;
+	}
+
+	blockquote .text-quote{
+		padding: 10px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+/* content formatting */
 body {
 	color: #3e3e3e;
 }
@@ -46,6 +79,35 @@ body {
 a {
 	color: #21426f;
 }
+
 a:hover {
 	color: #2f5d9e
+}
+
+blockquote.twitter-tweet {
+	margin: 0 auto 0 auto;
+}
+
+.embedded-figure {
+	margin: 0;
+}
+
+figcaption {
+	margin-bottom: 24px;
+	font-style: italic;
+}
+
+figure {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+a.tooltip-definition {
+	text-decoration: none;
+	background-color: rgba(32, 107, 153, 0.2);
+}
+
+img.single-screenshot {
+	max-width: 100%;
+	border-radius: 5px;
 }
